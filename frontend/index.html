@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Sign in | ThinkMart</title>
+  <link rel="icon" href="assets/thinkmart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-page="login">
+  <div class="site-shell"><div data-app-header></div>
+    <main class="site-main auth-layout">
+      <aside class="auth-visual"><div class="auth-visual-copy"><span class="eyebrow" style="color:#c7d4ff">A better kind of find</span><h2>Good things, thoughtfully chosen.</h2><p>Meet the technology that makes everyday life feel a little more like yours.</p></div></aside>
+      <section class="auth-form-side"><div class="auth-card">
+        <span class="eyebrow">Welcome back</span><h1>Sign in to ThinkMart</h1><p>Your next thoughtful find is just around the corner.</p>
+        <form class="form-stack" data-login-form>
+          <div class="form-message" data-form-message role="alert"></div>
+          <div class="field"><label for="login-email">Email address</label><input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="login-password">Password</label><div class="password-wrap"><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required><button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div></div>
+          <div class="form-options"><span><i class="fa-solid fa-lock"></i> Secure sign-in</span></div>
+          <button class="button form-submit" type="submit">Sign in <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <p class="auth-switch">New to ThinkMart? <a href="Register-Page.html">Create an account</a></p>
+      </div></section>
+    </main>
+    <div data-app-footer></div>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

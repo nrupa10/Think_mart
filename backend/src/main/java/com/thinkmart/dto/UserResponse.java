@@ -1,0 +1,6 @@
+package com.thinkmart.dto;
+
+import com.thinkmart.entity.Role;
+
+public record UserResponse(Long id, String fullName, String email, String phone, Role role) {
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Checkout | ThinkMart</title>
+  <link rel="icon" href="assets/thinkmart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-page="checkout">
+  <div class="site-shell"><div data-app-header></div>
+    <main class="site-main"><section class="page-intro"><div class="container"><div class="breadcrumb"><a href="Cart.html">Your cart</a><i class="fa-solid fa-chevron-right"></i><span>Checkout</span></div><span class="eyebrow">The easy part</span><h1 class="display-title">Let's get it to you.</h1><p>Check your details, confirm your address, and we'll take it from here.</p></div></section>
+      <div class="container" data-checkout-content><div class="checkout-layout"><form class="form-stack" data-checkout-form><section class="checkout-section"><h2>Contact details</h2><div class="form-grid"><div class="field"><label for="checkout-name">Full name</label><input id="checkout-name" name="customerName" autocomplete="name" maxlength="100" required></div><div class="field"><label for="checkout-email">Email address</label><input id="checkout-email" name="customerEmail" type="email" autocomplete="email" maxlength="190" required></div><div class="field field-full"><label for="checkout-phone">Phone number</label><input id="checkout-phone" name="customerPhone" type="tel" autocomplete="tel" minlength="7" maxlength="30" required></div></div></section><section class="checkout-section"><h2>Delivery address</h2><div class="form-grid"><div class="field field-full"><label for="checkout-address">Street address, city, and postal code</label><textarea id="checkout-address" name="deliveryAddress" autocomplete="street-address" maxlength="1500" placeholder="123 Market Street, San Francisco, CA 94105" required></textarea></div></div></section><section class="checkout-section"><h2>Payment</h2><div class="payment-choice"><i class="fa-solid fa-circle-check"></i><div><strong>Demo payment confirmation</strong><small>No card details are collected and no real payment is processed.</small></div></div></section><div class="form-message" data-checkout-error role="alert"></div><button class="button form-submit" type="submit">Place order <i class="fa-solid fa-arrow-right"></i></button></form>
+        <aside class="summary-card checkout-summary"><h2>Your order</h2><div class="order-mini-list" data-checkout-items><div class="product-loading"><i class="fa-solid fa-circle-notch fa-spin"></i>Loading order...</div></div><div class="summary-row" style="margin-top:19px"><span>Subtotal</span><strong data-checkout-subtotal>--</strong></div><div class="summary-row"><span>ThinkMart savings</span><strong data-checkout-discount>--</strong></div><div class="summary-row"><span>Shipping</span><strong>Free</strong></div><div class="summary-row total"><span>Total</span><span data-checkout-total>--</span></div><div class="secure-note"><i class="fa-solid fa-lock"></i> Your details stay protected</div></aside></div></div>
+    </main>
+    <div data-app-footer></div>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
